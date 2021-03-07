@@ -35,6 +35,7 @@ function luafb2.parse(content)
 		book.description.lang = fb2.description["title-info"].lang
 		book.description.title = fb2.description["title-info"].title
 		book.description.sequence = fb2.description["title-info"].sequence
+		book.description.coverpage = fb2.description["title-info"].coverpage
 
 		for k, v in ipairs(fb2.description["title-info"].annotation) do
 			book.description.annotation = toNormal(k, v)
