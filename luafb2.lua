@@ -50,6 +50,7 @@ function luafb2.parse(content)
 	end
 
 	book.body = fb2.body
+	book.binaries = fb2.binary
 
 	return book
 end

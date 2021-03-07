@@ -188,10 +188,11 @@ local function parseXmlDeclaration(self, xml, f)
         err(self, self._errstr.declErr, f.pos)
     end 
 
-    if f.match ~= 1 then
+    -- That cause errors
+    --[[if f.match ~= 1 then
         -- Must be at start of doc if present
         err(self, self._errstr.declStartErr, f.pos)
-    end
+    end--]]
 
     local tag = parseTag(self, f.text) 
     -- TODO: Check if attributes are valid
