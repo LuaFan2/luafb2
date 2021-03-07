@@ -49,10 +49,9 @@ function luafb2.parse(content)
 		book.description.id = fb2.description["document-info"].id
 	end
 
-	local body = fb2.body
 	book.body = fb2.body
 
-	return fb2
+	return book
 end
 
 function luafb2.parse_file(path)
